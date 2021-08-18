@@ -23,7 +23,7 @@ export default function Details({route}) {
   const [item, setItem] = useState([]);
   const id = route.params?.item?.id;
   
-  const favorite = favorities.find(item => item.id == id)?.favorite;
+  const favorite = favorities?.find(item => item.id == id)?.favorite;
 
   useEffect(() => {
     async function searchPokemon(filter) {

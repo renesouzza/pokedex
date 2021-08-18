@@ -26,7 +26,7 @@ export default function ListView({data, reloadData, nextPage}) {
 
   const favorite = function (item) {
     let id = item.id;
-    return favorities.find(item => item.id == id)?.favorite;
+    return favorities?.find(item => item.id == id)?.favorite;
   }
 
   const renderItem = ({item}) => (
